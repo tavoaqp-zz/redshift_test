@@ -2,13 +2,31 @@
 <html>
 <head>
   <title>ChallengeElo</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
 </head>
 <body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">Agendamento de transferencias</a>
+      <ul class="nav">
+        <li class="active"><a href="/schedule">Agendamentos</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
+<div class="container">
 <%= yield %>
+</div>
+<footer>
+  <div class="container">
+    Agendamento de Transferencias
+  </div>
+</footer>
 
 </body>
 </html>
