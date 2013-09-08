@@ -1,4 +1,8 @@
 ChallengeElo::Application.routes.draw do
+  get "account/index"
+  get "account/show"
+  get "account/create"
+  get "account/delete"
   get "transfer/index"
   get "transfer/show"
   get "transfer/create"

@@ -1,0 +1,30 @@
+pt-BR:
+  activerecord:
+    models:
+      user:
+        one: 'Usuário'
+        other: 'Usuários'
+    attributes:
+      user:
+        email: 'Email'
+        password: 'Senha'
+        password_confirmation: 'Confirmação de senha'
+        remember_me: 'Lembrar de mim'
+        first_name: 'Nome'
+        last_name: 'Sobrenome'
+        email_confirmation: 'Confirmação de email'        
+        current_password: 'Senha atual'
+        sign_in_count: 'Número de entradas'
+        current_sign_in_at: 'Entrada atual em'
+        last_sign_in_at: 'Última entrada em'
+        current_sign_in_ip: 'IP da antrada atual'
+        last_sign_in_ip: 'IP da última entrada'
+        confirmation_token: 'Chave de confirmação'
+        confirmed_at: 'Confirmado em'
+        confirmation_sent_at: 'Confirmação enviada em'
+    errors:
+      models:
+        user:
+          attributes:
+  errors:
+    messages:
