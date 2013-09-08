@@ -1,4 +1,8 @@
 ChallengeElo::Application.routes.draw do
+  get "transfer/index"
+  get "transfer/show"
+  get "transfer/create"
+  get "transfer/delete"
   devise_for :users
   get "main/index"
   # The priority is based upon order of creation: first created -> highest priority.
