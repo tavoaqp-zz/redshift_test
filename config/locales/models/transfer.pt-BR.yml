@@ -2,13 +2,13 @@ pt-BR:
   activerecord:
     models:
       transfer:
-        one: 'Transferencia'
-        other: 'Transferencias'
+        one: 'Transferência'
+        other: 'Transferências'
     attributes:
       transfer:
         src_account_id: "Conta de origem"
         dst_account_id: "Conta de destino"
-        amount: "Valor da transferencia"
+        amount: "Valor da transferência"
         tax: "Taxa"
         scheduled_date: "Data de agendamento"
         type: "Tipo"

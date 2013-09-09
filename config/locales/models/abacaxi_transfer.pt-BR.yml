@@ -2,22 +2,23 @@ pt-BR:
   activerecord:
     models:
       abacaxi_transfer:
-        one: 'Transferencia'
-        other: 'Transferencias'
+        one: 'Transferência'
+        other: 'Transferências'
     attributes:
       abacaxi_transfer:
         src_account_id: "Conta de origem"
         dst_account_id: "Conta de destino"
-        amount: "Valor da transferencia"
+        amount: "Valor da transferência"
         tax: "Taxa"
         scheduled_date: "Data de agendamento"
+        type: "Tipo"
     errors:
       models:
         abacaxi_transfer:
           attributes:
             amount:
               blank: "O valor não pode ficar em branco"
-              not_a_number: "O valor da transferencia precisa ser um número"
+              not_a_number: "O valor da transferência precisa ser um número"
             src_account_id:
               blank: "A conta de origem não pode ficar vazia"
             dst_account_id:

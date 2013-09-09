@@ -20,5 +20,5 @@
   <%= f.date_field :scheduled_date, :default => Date.today, :selected => @transfer.scheduled_date %>
   <%= f.label :type %>
   <%= f.select(:type, options_for_select([['A',"AbacaxiTransfer"],['B',"BessouroTransfer"],['C',"CapibaraTransfer"],['D',"DamascoTransfer"] ], @transfer.type )) %>
-  <%= f.submit "Agendar transferencia" %>
+  <%= f.submit "Agendar transferência" %>
 <% end %>
