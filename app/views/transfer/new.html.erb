@@ -1,0 +1,24 @@
+<%= form_for @transfer, url: {action: "create"}, html: {class: "nifty_form"} , id: "new_transfer" do |f| %>
+	<% if @transfer.errors.any? %>
+    <div id="error_explanation">
+      <h2>Foram encontrados : <%= pluralize(@transfer.errors.count, "erro") %></h2>
+
+      <ul>
+      <% @transfer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.label :src_account_id %>
+  <%= f.text_field :src_account_id %>
+  <%= f.label :dst_account_id %>
+  <%= f.text_field :dst_account_id %>
+  <%= f.label :amount %>
+  <%= f.number_field :amount %>
+  <%= f.label :scheduled_date %>
+  <%= f.date_field :scheduled_date, :default => Date.today, :selected => @transfer.scheduled_date %>
+  <%= f.label :type %>
+  <%= f.select(:type, options_for_select([['A',"AbacaxiTransfer"],['B',"BessouroTransfer"],['C',"CapibaraTransfer"],['D',"DamascoTransfer"] ], @transfer.type )) %>
+  <%= f.submit "Agendar transferencia" %>
+<% end %>

@@ -1,11 +1,16 @@
 ChallengeElo::Application.routes.draw do
   get "account/index"
   get "account/show"
-  get "account/create"
+  post "account/create"
   get "account/delete"
+  get "account/new"
+  post "account/new"
+
   get "transfer/index"
   get "transfer/show"
-  get "transfer/create"
+  get "transfer/new"
+  post "transfer/new"
+  post "transfer/create"
   get "transfer/delete"
   devise_for :users
   get "main/index"

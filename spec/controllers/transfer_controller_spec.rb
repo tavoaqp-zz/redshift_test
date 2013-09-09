@@ -35,7 +35,7 @@ describe TransferController do
 	describe "POST create" do
 		it "should create a new transfer object" do
 			sign_in user
-			transfer_attributes=FactoryGirl.attributes_for(:capibara_transfer, :src_account_id => account1.id, :dst_account_id => account2.id, :amount => 100, :scheduled_date => Date.today+20.days)			
+			transfer_attributes=FactoryGirl.attributes_for(:capibara_transfer, :src_account_id => account1.code, :dst_account_id => account2.code, :amount => 100, :scheduled_date => Date.today+20.days)			
 
 			post :create, :transfer => transfer_attributes
 			user.transfers.reload

@@ -1,1 +1,21 @@
-Listas todas as transferencias aqui
+<h2>Transferencias agendadas</h2>
+<%= button_to "Nova Transferencia", action: "new"  %>
+<table class="transfer_table">
+    <tr>
+      <th><%= t 'activerecord.attributes.transfer.src_account_id' %></th>
+      <th><%= t 'activerecord.attributes.transfer.dst_account_id' %></th>
+      <th><%= t 'activerecord.attributes.transfer.amount' %></th>
+      <th><%= t 'activerecord.attributes.transfer.tax' %></th>
+      <th><%= t 'activerecord.attributes.transfer.scheduled_date' %></th>
+    </tr>
+
+  <% @transfers.each do |transfer| %>
+    <tr>
+      <td><%= transfer.src_account_id %></td>
+      <td><%= transfer.dst_account_id %></td>
+      <td><%= transfer.amount %></td>
+      <td><%= transfer.tax %></td>
+      <td><%= transfer.scheduled_date %></td>
+    </tr>
+  <% end %>
+  </table>

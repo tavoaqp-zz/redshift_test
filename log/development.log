@@ -4576,3 +4576,4321 @@ Migrating to ChangeScheduleDateNameInTransfer (20130909134110)
   [1m[36mSQL (32.9ms)[0m  [1mUPDATE "transfers" SET "scheduled_date" = ?, "amount" = ?, "updated_at" = ? WHERE "transfers"."id" = 1[0m  [["scheduled_date", Sun, 08 Dec 2013], ["amount", 1000.0], ["updated_at", Mon, 09 Sep 2013 13:47:28 UTC +00:00]]
   [1m[35m (137.1ms)[0m  commit transaction
   [1m[36mTransfer Load (0.3ms)[0m  [1mSELECT "transfers".* FROM "transfers" WHERE "transfers"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:55:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (785.3ms)
+Completed 200 OK in 1853ms (Views: 1797.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:40 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-09-09 15:55:41 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (112.2ms)
+Completed 200 OK in 223ms (Views: 129.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-09-09 15:55:46 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tSwzJPjgA6zYVzAUDeHWaxvBx+RUk2i04sUS29dzUSM=", "user"=>{"email"=>"tavoaqp@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Enviar"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'tavoaqp@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (52.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Sun, 08 Sep 2013 23:27:57 UTC +00:00], ["current_sign_in_at", Mon, 09 Sep 2013 18:55:46 UTC +00:00], ["sign_in_count", 6], ["updated_at", Mon, 09 Sep 2013 18:55:46 UTC +00:00]]
+  [1m[36m (197.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 556ms (ActiveRecord: 250.1ms)
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 15:55:48 -0300
+Processing by AccountController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered account/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 108ms (Views: 18.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered account/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:55:52 -0300
+
+
+Started GET "/account/create" for 127.0.0.1 at 2013-09-09 15:56:07 -0300
+Processing by AccountController#create as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 400 Bad Request in 3ms
+
+ActionController::ParameterMissing (param not found: account):
+  app/controllers/account_controller.rb:13:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.7ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2013-09-09 15:58:26 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AccountController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered account/new.html.erb within layouts/application (35.6ms)
+Completed 500 Internal Server Error in 216ms
+
+ActionView::Template::Error (undefined method `title' for #<Account:0x0000000472f3b8>):
+    1: <%= form_for @account, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    2:   <%= f.text_field :title %>
+    3:   <%= f.text_area :body, size: "60x12" %>
+    4:   <%= f.submit "Create" %>
+    5: <% end %>
+  app/views/account/new.html.erb:2:in `block in _app_views_account_new_html_erb___383968440518331601_39177780'
+  app/views/account/new.html.erb:1:in `_app_views_account_new_html_erb___383968440518331601_39177780'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2013-09-09 15:58:49 -0300
+Processing by AccountController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered account/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 230ms (Views: 226.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:58:49 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 15:58:49 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:58:49 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:58:49 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 15:58:49 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 15:58:49 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:58:50 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 15:58:50 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 15:58:50 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 15:58:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:58:50 -0300
+
+
+Started GET "/account/new" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+Processing by AccountController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered account/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 15:59:02 -0300
+
+
+Started GET "/account/new" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+Processing by AccountController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered account/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:01:27 -0300
+
+
+Started GET "/account/new" for 127.0.0.1 at 2013-09-09 16:02:43 -0300
+Processing by AccountController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered account/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 86ms (Views: 16.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:02:44 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:02:46 -0300
+
+ActionController::RoutingError (No route matches [POST] "/account/create"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.2ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (66.2ms)
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:03:01 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAccount Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered account/create.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 160ms
+
+ActionView::Template::Error (undefined method `title' for #<Account:0x007f96486ea448>):
+    1: <%= form_for @account, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    2:   <%= f.text_field :title %>
+    3:   <%= f.text_area :body, size: "60x12" %>
+    4:   <%= f.submit "Create" %>
+    5: <% end %>
+  app/views/account/create.html.erb:2:in `block in _app_views_account_create_html_erb___1630616272203574835_39220380'
+  app/views/account/create.html.erb:1:in `_app_views_account_create_html_erb___1630616272203574835_39220380'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAccount Load (20.9ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?[0m  [["user_id", 1]]
+In Rails 4.1 delete_all on associations would not fire callbacks. It means if the :dependent option is :destroy then the associated records would be deleted without loading and invoking callbacks.
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (22.6ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 1]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 2]]
+  [1m[36m (258.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/account/new" for 127.0.0.1 at 2013-09-09 16:07:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AccountController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered account/new.html.erb within layouts/application (262.3ms)
+Completed 200 OK in 690ms (Views: 445.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:51 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:07:53 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAccount Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered account/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 116ms (Views: 6.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:07:54 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAccount Exists (0.2ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered account/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 23ms (Views: 9.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:08:21 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:09:38 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAccount Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered account/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 7.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:09:38 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:09:38 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:09:38 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:09:39 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:39 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:39 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:39 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:39 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:39 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:39 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:39 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAccount Exists (0.2ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered account/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 242ms (Views: 75.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:09:47 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mAccount Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered account/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 23ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:02 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:10:10 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAccount Exists (0.2ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered account/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 242ms (Views: 73.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:11 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:10:49 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"12334-4", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAccount Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12334-4' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12334-4' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered account/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 5.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:49 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:49 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:49 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:49 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:10:49 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:49 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:50 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:50 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:50 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:10:50 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:10:55 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"12334-4", "total"=>"100"}, "commit"=>"Criar conta"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAccount Exists (0.2ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12334-4' LIMIT 1
+  [1m[36mSQL (195.9ms)[0m  [1mINSERT INTO "accounts" ("code", "created_at", "total", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "12334-4"], ["created_at", Mon, 09 Sep 2013 19:10:55 UTC +00:00], ["total", 100.0], ["updated_at", Mon, 09 Sep 2013 19:10:55 UTC +00:00]]
+  [1m[35m (188.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT 1 AS one FROM "accounts" WHERE ("accounts"."code" = '12334-4' AND "accounts"."id" != 3) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "accounts" SET "user_id" = ?, "updated_at" = ? WHERE "accounts"."id" = 3[0m  [["user_id", 1], ["updated_at", Mon, 09 Sep 2013 19:10:56 UTC +00:00]]
+  [1m[35m (123.9ms)[0m  commit transaction
+  Rendered account/create.html.erb within layouts/application (50.4ms)
+Completed 500 Internal Server Error in 578ms
+
+ActionView::Template::Error (undefined method `title' for #<Account:0x007f10540cf8a8>):
+    1: <%= form_for @account, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    2:   <%= f.text_field :title %>
+    3:   <%= f.text_area :body, size: "60x12" %>
+    4:   <%= f.submit "Create" %>
+    5: <% end %>
+  app/views/account/create.html.erb:2:in `block in _app_views_account_create_html_erb___3868137767726615542_69854054902580'
+  app/views/account/create.html.erb:1:in `_app_views_account_create_html_erb___3868137767726615542_69854054902580'
+  app/controllers/account_controller.rb:19:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
+In Rails 4.1 delete_all on associations would not fire callbacks. It means if the :dependent option is :destroy then the associated records would be deleted without loading and invoking callbacks.
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+In Rails 4.1 delete_all on associations would not fire callbacks. It means if the :dependent option is :destroy then the associated records would be deleted without loading and invoking callbacks.
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 3]]
+  [1m[36m (184.4ms)[0m  [1mcommit transaction[0m
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"12334-4", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAccount Exists (0.2ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12334-4' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12334-4' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered account/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 221ms (Views: 72.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:12:34 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:12:36 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"12334-4", "total"=>"100"}, "commit"=>"Criar conta"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAccount Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12334-4' LIMIT 1[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "accounts" ("code", "created_at", "total", "updated_at") VALUES (?, ?, ?, ?)  [["code", "12334-4"], ["created_at", Mon, 09 Sep 2013 19:12:36 UTC +00:00], ["total", 100.0], ["updated_at", Mon, 09 Sep 2013 19:12:36 UTC +00:00]]
+  [1m[36m (258.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAccount Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE ("accounts"."code" = '12334-4' AND "accounts"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "accounts" SET "user_id" = ?, "updated_at" = ? WHERE "accounts"."id" = 4  [["user_id", 1], ["updated_at", Mon, 09 Sep 2013 19:12:36 UTC +00:00]]
+  [1m[36m (127.1ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 411ms
+
+NoMethodError (undefined method `account_url' for #<AccountController:0x007faa947ee050>):
+  app/controllers/account_controller.rb:21:in `block (2 levels) in create'
+  app/controllers/account_controller.rb:19:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+In Rails 4.1 delete_all on associations would not fire callbacks. It means if the :dependent option is :destroy then the associated records would be deleted without loading and invoking callbacks.
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 4]]
+  [1m[36m (181.5ms)[0m  [1mcommit transaction[0m
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"12334-4", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAccount Exists (0.1ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12334-4' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12334-4' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered account/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 73ms (Views: 5.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:19 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"12334-4", "total"=>"100"}, "commit"=>"Criar conta"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAccount Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12334-4' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "accounts" ("code", "created_at", "total", "updated_at") VALUES (?, ?, ?, ?)  [["code", "12334-4"], ["created_at", Mon, 09 Sep 2013 19:15:21 UTC +00:00], ["total", 100.0], ["updated_at", Mon, 09 Sep 2013 19:15:21 UTC +00:00]]
+  [1m[36m (385.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAccount Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE ("accounts"."code" = '12334-4' AND "accounts"."id" != 5) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "accounts" SET "user_id" = ?, "updated_at" = ? WHERE "accounts"."id" = 5  [["user_id", 1], ["updated_at", Mon, 09 Sep 2013 19:15:21 UTC +00:00]]
+  [1m[36m (139.1ms)[0m  [1mcommit transaction[0m
+  Rendered account/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 559ms (Views: 24.4ms | ActiveRecord: 526.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:15:21 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:17:54 -0300
+Processing by AccountController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered account/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:       <th><%= t 'activerecord.attributes.user.total' %></th>
+    5:     </tr>
+    6: 
+    7:   <% @account.each do |account| %>
+    8:     <tr>
+    9:       <td><%= account.code %></td>
+   10:       <td><%= account.total %></td>
+  app/views/account/index.html.erb:7:in `_app_views_account_index_html_erb___880494207141907975_70185304982520'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:17:59 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 8.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:36 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:18:47 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 16:25:47 -0300
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 88ms (Views: 14.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:25:47 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:25:47 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:25:47 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:25:47 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:25:47 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:25:47 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:25:47 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:25:48 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:25:48 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:25:48 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:25:48 -0300
+
+
+Started GET "/transfer/index" for 127.0.0.1 at 2013-09-09 16:25:56 -0300
+Processing by TransferController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTransfer Load (0.1ms)[0m  SELECT "transfers".* FROM "transfers" WHERE "transfers"."user_id" = ?  [["user_id", 1]]
+  Rendered transfer/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 5.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:26:00 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/transfer/index" for 127.0.0.1 at 2013-09-09 16:26:04 -0300
+Processing by TransferController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTransfer Load (0.2ms)[0m  SELECT "transfers".* FROM "transfers" WHERE "transfers"."user_id" = ?  [["user_id", 1]]
+  Rendered transfer/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:26:06 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:28:56 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:29:57 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:30:04 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:05 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.5ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:10 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:16 -0300
+
+
+Started GET "/account/new" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+Processing by AccountController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered account/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 80ms (Views: 78.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:34 -0300
+
+
+Started POST "/account/create" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+Processing by AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "account"=>{"code"=>"", "total"=>""}, "commit"=>"Criar conta"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAccount Exists (0.1ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered account/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 6.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:30:36 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:31:57 -0300
+
+
+Started POST "/account/new" for 127.0.0.1 at 2013-09-09 16:31:59 -0300
+
+ActionController::RoutingError (No route matches [POST] "/account/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (68.3ms)
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:20 -0300
+
+
+Started POST "/account/new?method=get" for 127.0.0.1 at 2013-09-09 16:32:22 -0300
+
+ActionController::RoutingError (No route matches [POST] "/account/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.4ms)
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:32:25 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:11 -0300
+
+
+Started POST "/account/new?method=get" for 127.0.0.1 at 2013-09-09 16:33:19 -0300
+
+ActionController::RoutingError (No route matches [POST] "/account/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.5ms)
+
+
+Started POST "/account/new?method=get" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+Processing by AccountController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "method"=>"get"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered account/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 91ms (Views: 13.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:48 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+Processing by AccountController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:51 -0300
+
+
+Started POST "/account/new?method=get" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+Processing by AccountController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "method"=>"get"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered account/new.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:52 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 14ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:33:57 -0300
+
+
+Started GET "/account/index" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+Processing by AccountController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."user_id" = ?  [["user_id", 1]]
+  Rendered account/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:10 -0300
+
+
+Started POST "/account/new" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+Processing by AccountController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered account/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:12 -0300
+
+
+Started GET "/transfer/index" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+Processing by TransferController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTransfer Load (0.1ms)[0m  [1mSELECT "transfers".* FROM "transfers" WHERE "transfers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered transfer/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 5.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:14 -0300
+
+
+Started GET "/transfer/index" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+Processing by TransferController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTransfer Load (0.2ms)[0m  [1mSELECT "transfers".* FROM "transfers" WHERE "transfers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered transfer/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:43 -0300
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 16:34:45 -0300
+
+ActionController::RoutingError (No route matches [POST] "/transfer/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/gustavo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (23.5ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (45.1ms)
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered transfer/new.html.erb within layouts/application (80.5ms)
+Completed 200 OK in 155ms (Views: 118.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:34:56 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-13"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (93.9ms)
+Completed 200 OK in 138ms (Views: 97.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:19 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:38:06 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-13"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `select_tag' for #<ActionView::Helpers::FormBuilder:0x007faa940c0a58>):
+    19:   <%= f.label :scheduled_date %>
+    20:   <%= f.date_field :scheduled_date %>
+    21:   <%= f.label :type %>
+    22:   <%= f.select_tag(:type, options_for_select([['A','AbacaxiTransfer'],['B','BessouroTransfer'],['C','CapibaraTransfer'],['D','DamascoTransfer'] ])) %>
+    23:   <%= f.submit "Agendar transferencia" %>
+    24: <% end %>
+  app/views/transfer/new.html.erb:22:in `block in _app_views_transfer_new_html_erb___1881466812871379446_70185302341320'
+  app/views/transfer/new.html.erb:1:in `_app_views_transfer_new_html_erb___1881466812871379446_70185302341320'
+  app/controllers/transfer_controller.rb:24:in `block (2 levels) in create'
+  app/controllers/transfer_controller.rb:20:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-13"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (69.2ms)
+Completed 200 OK in 84ms (Views: 74.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:38:32 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:38:54 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 70ms
+
+NoMethodError (undefined method `-' for nil:NilClass):
+  app/models/transfer.rb:27:in `days_to_schedule'
+  app/models/transfer.rb:21:in `date_range'
+  app/controllers/transfer_controller.rb:21:in `block in create'
+  app/controllers/transfer_controller.rb:20:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-13"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 24ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:16 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:39:21 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-04", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:39:22 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:39:45 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 5ms
+
+ActionController::ParameterMissing (param not found: transfer):
+  app/controllers/transfer_controller.rb:17:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:40:04 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 400 Bad Request in 4ms
+
+ActionController::ParameterMissing (param not found: transfer):
+  app/controllers/transfer_controller.rb:17:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.5ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-04", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 23ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:34 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:40:50 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"BessouroTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 400 Bad Request in 5ms
+
+ActionController::ParameterMissing (param not found: transfer):
+  app/controllers/transfer_controller.rb:17:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:40:55 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"BessouroTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 3ms
+
+ActionController::ParameterMissing (param not found: transfer):
+  app/controllers/transfer_controller.rb:17:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-04", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 21ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:57 -0300
+
+
+Started GET "/transfer/index" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+Processing by TransferController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTransfer Load (0.2ms)[0m  SELECT "transfers".* FROM "transfers" WHERE "transfers"."user_id" = ?  [["user_id", 1]]
+  Rendered transfer/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:00 -0300
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered transfer/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:01 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:41:09 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `-' for nil:NilClass):
+  app/models/transfer.rb:27:in `days_to_schedule'
+  app/models/transfer.rb:21:in `date_range'
+  app/controllers/transfer_controller.rb:21:in `block in create'
+  app/controllers/transfer_controller.rb:20:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered transfer/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:12 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-12", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 23ms (Views: 10.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/transfer/index" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+Processing by TransferController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTransfer Load (0.3ms)[0m  SELECT "transfers".* FROM "transfers" WHERE "transfers"."user_id" = ?  [["user_id", 1]]
+  Rendered transfer/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:00 -0300
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered transfer/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:01 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 16ms (Views: 7.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:42:11 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:43:35 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 3ms
+
+ActionController::ParameterMissing (param not found: transfer):
+  app/controllers/transfer_controller.rb:17:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:54:24 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 400 Bad Request in 105ms
+
+ActionController::ParameterMissing (param not found: transfer):
+  app/controllers/transfer_controller.rb:48:in `transfer_params'
+  app/controllers/transfer_controller.rb:17:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.6ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:54:49 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 53ms
+
+ActionController::ParameterMissing (param not found: capibara_transfer):
+  app/controllers/transfer_controller.rb:52:in `transfer_params'
+  app/controllers/transfer_controller.rb:17:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:55:30 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 89ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/transfer_controller.rb:22:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 175ms (Views: 64.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:28 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:56:34 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"CapibaraTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 77ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:35 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "capibara_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"BessouroTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 43ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:46 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "bessouro_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"DamascoTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 75ms (Views: 8.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:56:50 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:57:58 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "damasco_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 61ms
+
+NoMethodError (undefined method `user=' for nil:NilClass):
+  app/controllers/transfer_controller.rb:26:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:58:21 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "damasco_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 28ms
+
+NoMethodError (undefined method `user=' for nil:NilClass):
+  app/controllers/transfer_controller.rb:28:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "bessouro_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-09", "type"=>"DamascoTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 48ms (Views: 8.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:32 -0300
+
+
+Started GET "/transfer/index" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+Processing by TransferController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTransfer Load (0.4ms)[0m  [1mSELECT "transfers".* FROM "transfers" WHERE "transfers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered transfer/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 20.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:38 -0300
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered transfer/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 19ms (Views: 14.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:39 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:58:40 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 25ms
+
+NoMethodError (undefined method `-' for nil:NilClass):
+  app/models/transfer.rb:27:in `days_to_schedule'
+  app/models/transfer.rb:21:in `date_range'
+  app/controllers/transfer_controller.rb:31:in `block in create'
+  app/controllers/transfer_controller.rb:30:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered transfer/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:43 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-19", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 21ms (Views: 8.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:50 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-19", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 17ms (Views: 8.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:52 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-19", "type"=>"BessouroTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 33ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:58:55 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-19", "type"=>"BessouroTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 21ms (Views: 11.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:16 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "bessouro_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-19", "type"=>"CapibaraTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 34ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:20 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "capibara_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-19", "type"=>"DamascoTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 20ms (Views: 6.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:23 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:00:26 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "damasco_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-19", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `user=' for nil:NilClass):
+  app/controllers/transfer_controller.rb:28:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:00:29 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "damasco_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-19", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `user=' for nil:NilClass):
+  app/controllers/transfer_controller.rb:28:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (26.2ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.7ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "capibara_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-19", "type"=>"DamascoTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 25ms (Views: 12.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:30 -0300
+
+
+Started GET "/transfer/index" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+Processing by TransferController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTransfer Load (0.1ms)[0m  [1mSELECT "transfers".* FROM "transfers" WHERE "transfers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered transfer/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:33 -0300
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered transfer/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:34 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:00:35 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError (undefined method `-' for nil:NilClass):
+  app/models/transfer.rb:27:in `days_to_schedule'
+  app/models/transfer.rb:21:in `date_range'
+  app/controllers/transfer_controller.rb:31:in `block in create'
+  app/controllers/transfer_controller.rb:30:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered transfer/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:00:38 -0300
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered transfer/new.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:11 -0300
+
+
+Started GET "/transfer/index" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+Processing by TransferController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTransfer Load (0.7ms)[0m  [1mSELECT "transfers".* FROM "transfers" WHERE "transfers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered transfer/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:15 -0300
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered transfer/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:16 -0300
+
+
+Started POST "/transfer/new" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+Processing by TransferController#new as HTML
+  Parameters: {"authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered transfer/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:02:22 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:02:53 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 12ms
+
+NoMethodError (undefined method `-' for nil:NilClass):
+  app/models/transfer.rb:27:in `days_to_schedule'
+  app/models/transfer.rb:21:in `date_range'
+  app/controllers/transfer_controller.rb:31:in `block in create'
+  app/controllers/transfer_controller.rb:30:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:03:43 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 47ms
+
+NameError (undefined local variable or method `scheduled_date' for #<Class:0x007faa943c9f60>):
+  app/models/transfer.rb:12:in `<class:Transfer>'
+  app/models/transfer.rb:1:in `<top (required)>'
+  app/controllers/transfer_controller.rb:20:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (26.8ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.6ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:03:55 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 33ms
+
+NameError (undefined local variable or method `scheduled_date' for #<Class:0x007faa7c0506f8>):
+  app/models/transfer.rb:12:in `<class:Transfer>'
+  app/models/transfer.rb:1:in `<top (required)>'
+  app/controllers/transfer_controller.rb:20:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:04:27 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 90ms
+
+NoMethodError (undefined method `<' for nil:NilClass):
+  app/models/transfer.rb:21:in `date_range'
+  app/controllers/transfer_controller.rb:31:in `block in create'
+  app/controllers/transfer_controller.rb:30:in `create'
+
+
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 101ms (Views: 9.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:46 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 18ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:51 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-11", "type"=>"AbacaxiTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:04:55 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "abacaxi_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-11", "type"=>"CapibaraTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 119ms (Views: 9.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:05:08 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "capibara_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-11", "type"=>"CapibaraTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered transfer/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 110ms (Views: 9.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:44 -0300
+
+
+Started POST "/transfer/create" for 127.0.0.1 at 2013-09-09 17:06:47 -0300
+Processing by TransferController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJhT5J/Sh0K70Pwngq3qXYUNiNboFqHYH2lKHCpO8Ug=", "capibara_transfer"=>{"src_account_id"=>"", "dst_account_id"=>"", "amount"=>"", "scheduled_date"=>"2013-09-11", "type"=>"DamascoTransfer"}, "commit"=>"Agendar transferencia"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered transfer/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 31ms (Views: 8.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+
+
+Started GET "/assets/account.css?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+
+
+Started GET "/assets/transfer.css?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+
+
+Started GET "/assets/account.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+
+
+Started GET "/assets/transfer.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2013-09-09 17:06:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeAccountIdsInTransfer (20130909201106)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (22.0ms)[0m  [1mCREATE TEMPORARY TABLE "atransfers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "src_account_id" integer, "dst_account_id" integer, "amount" float, "tax" float, "scheduled_date" date, "created_at" datetime, "updated_at" datetime, "user_id" integer, "type" varchar(255) DEFAULT 'Transfer') [0m
+  [1m[35m (0.3ms)[0m  SELECT * FROM "transfers"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "atransfers" ("id","src_account_id","dst_account_id","amount","tax","scheduled_date","created_at","updated_at","user_id","type") VALUES (1, 1, 2, 1000.0, NULL, '2013-12-08', '2013-09-08 23:36:00.041319', '2013-09-09 13:47:28.966455', NULL, 'Transfer')[0m
+  [1m[35m (0.8ms)[0m  DROP TABLE "transfers"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "transfers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "src_account_id" varchar(255), "dst_account_id" integer, "amount" float, "tax" float, "scheduled_date" date, "created_at" datetime, "updated_at" datetime, "user_id" integer, "type" varchar(255) DEFAULT 'Transfer') [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "atransfers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "transfers" ("id","src_account_id","dst_account_id","amount","tax","scheduled_date","created_at","updated_at","user_id","type") VALUES (1, 1, 2, 1000.0, NULL, '2013-12-08', '2013-09-08 23:36:00.041319', '2013-09-09 13:47:28.966455', NULL, 'Transfer')[0m
+  [1m[35m (16.8ms)[0m  DROP TABLE "atransfers"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "atransfers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "src_account_id" varchar(255), "dst_account_id" integer, "amount" float, "tax" float, "scheduled_date" date, "created_at" datetime, "updated_at" datetime, "user_id" integer, "type" varchar(255) DEFAULT 'Transfer') [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "transfers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "atransfers" ("id","src_account_id","dst_account_id","amount","tax","scheduled_date","created_at","updated_at","user_id","type") VALUES (1, '1', 2, 1000.0, NULL, '2013-12-08', '2013-09-08 23:36:00.041319', '2013-09-09 13:47:28.966455', NULL, 'Transfer')[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "transfers"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "transfers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "src_account_id" varchar(255), "dst_account_id" varchar(255), "amount" float, "tax" float, "scheduled_date" date, "created_at" datetime, "updated_at" datetime, "user_id" integer, "type" varchar(255) DEFAULT 'Transfer') [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "atransfers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "transfers" ("id","src_account_id","dst_account_id","amount","tax","scheduled_date","created_at","updated_at","user_id","type") VALUES (1, '1', 2, 1000.0, NULL, '2013-12-08', '2013-09-08 23:36:00.041319', '2013-09-09 13:47:28.966455', NULL, 'Transfer')[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "atransfers"
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130909201106"]]
+  [1m[35m (287.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mTransfer Load (0.2ms)[0m  SELECT "transfers".* FROM "transfers" WHERE "transfers"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12345-4' LIMIT 1
+  [1m[36mSQL (26.8ms)[0m  [1mINSERT INTO "accounts" ("code", "created_at", "total", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["code", "12345-4"], ["created_at", Mon, 09 Sep 2013 20:13:02 UTC +00:00], ["total", 100.0], ["updated_at", Mon, 09 Sep 2013 20:13:02 UTC +00:00], ["user_id", 1]]
+  [1m[35m (220.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT 1 AS one FROM "accounts" WHERE "accounts"."code" = '12355-4' LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "accounts" ("code", "created_at", "total", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["code", "12355-4"], ["created_at", Mon, 09 Sep 2013 20:13:06 UTC +00:00], ["total", 100.0], ["updated_at", Mon, 09 Sep 2013 20:13:06 UTC +00:00], ["user_id", 1]]
+  [1m[35m (169.9ms)[0m  commit transaction
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT "accounts".* FROM "accounts" ORDER BY "accounts"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.4ms)[0m  SELECT "accounts".* FROM "accounts" ORDER BY "accounts"."id" DESC LIMIT 1
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."code" = ? ORDER BY "accounts"."id" ASC LIMIT 1[0m  [["code", "12334-4"]]

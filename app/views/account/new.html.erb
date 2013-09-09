@@ -1,0 +1,18 @@
+<%= form_for @account, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+	<% if @account.errors.any? %>
+    <div id="error_explanation">
+      <h2>Foram encontrados : <%= pluralize(@account.errors.count, "erro") %></h2>
+
+      <ul>
+      <% @account.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.label :code %>
+  <%= f.text_field :code %>
+  <%= f.label :total %>
+  <%= f.text_field :total %>
+  <%= f.submit "Criar conta" %>
+<% end %>

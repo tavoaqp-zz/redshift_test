@@ -1,0 +1,20 @@
+pt-BR:
+  activerecord:
+    models:
+      account:
+        one: 'Conta'
+        other: 'Contas'
+    attributes:
+      account:
+        code: 'Codigo'
+        total: 'Total'
+    errors:
+      models:
+        account:
+          attributes:
+            code:
+              blank: "O codigo não pode ficar em branco"
+            total:
+              blank: "O total não pode ficar em branco"
+  errors:
+    messages:

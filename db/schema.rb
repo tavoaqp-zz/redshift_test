@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130909134110) do
+ActiveRecord::Schema.define(version: 20130909201106) do
 
   create_table "accounts", force: true do |t|
     t.integer  "user_id"
@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 20130909134110) do
   add_index "accounts", ["code"], name: "index_accounts_on_code", unique: true
 
   create_table "transfers", force: true do |t|
-    t.integer  "src_account_id"
-    t.integer  "dst_account_id"
+    t.string   "src_account_id"
+    t.string   "dst_account_id"
     t.float    "amount"
     t.float    "tax"
     t.date     "scheduled_date"
