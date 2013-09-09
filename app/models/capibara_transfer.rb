@@ -1,3 +1,6 @@
+##
+# Classe que representa transferências tipo C
+
 class CapibaraTransfer < Transfer
 
 	def calculate_tax

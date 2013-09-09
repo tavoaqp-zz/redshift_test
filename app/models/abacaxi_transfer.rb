@@ -1,3 +1,6 @@
+##
+# Classe que representa transferencias tipo A
+
 class AbacaxiTransfer < Transfer
 
 	def calculate_tax

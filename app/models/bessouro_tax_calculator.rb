@@ -1,3 +1,6 @@
+##
+# Classe que calcula taxa para transferencias tipo B
+
 class BessouroTaxCalculator < TaxCalculator
 
 	def calculate_tax(transfer)

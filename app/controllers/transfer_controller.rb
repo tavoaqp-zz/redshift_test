@@ -1,3 +1,6 @@
+##
+# Controller de transferências
+
 class TransferController < ApplicationController
   before_filter :authenticate_user! 
 
@@ -13,6 +16,9 @@ class TransferController < ApplicationController
     @transfer=Transfer.new
   end
 
+  ##
+  # Este metodo recebe o POST e cria um objeto Transfer. Dependendo do tipo escolhido no formulario um dos quatro tipos de transferência é criado
+  # e, respetivamente, um dos TaxCalculator é disparado para calcular a taxa.
   def create 
     
     if (params[:transfer])

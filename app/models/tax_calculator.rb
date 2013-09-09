@@ -1,3 +1,6 @@
+##
+# Classe abstrata no padrão de projeto Composite
+
 class TaxCalculator
 
 	attr :children

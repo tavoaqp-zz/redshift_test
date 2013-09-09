@@ -1,4 +1,7 @@
 # encoding: utf-8
+##
+# Classe que representa uma conta
+
 class Account < ActiveRecord::Base
 	belongs_to :user
 

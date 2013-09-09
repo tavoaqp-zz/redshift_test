@@ -1,3 +1,8 @@
+##
+# Classe abstrata que representa uma transferência. O relacionamento com as contas é através do codigo delas.
+# Ela define também o método polimorfico calculate_tax que é implementado nas classes filhas que por sua vez
+# chammam o TaxCalculator que corresponde.
+
 class Transfer < ActiveRecord::Base
 	belongs_to :source_account, :foreign_key => "src_account_id", :primary_key => "code", :class_name => "Account"
 	belongs_to :destination_account, :foreign_key => "dst_account_id", :primary_key => "code", :class_name => "Account"

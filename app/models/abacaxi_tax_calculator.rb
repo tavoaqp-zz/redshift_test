@@ -1,3 +1,6 @@
+##
+# Classe que calcula taxa para transferencias tipo A
+
 class AbacaxiTaxCalculator < TaxCalculator
 
 	ABACAXI_BASE_TAX=2.0

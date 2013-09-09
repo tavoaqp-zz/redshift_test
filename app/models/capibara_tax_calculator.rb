@@ -1,3 +1,6 @@
+##
+# Classe que calcula taxa para transferências tipo C
+
 class CapibaraTaxCalculator < TaxCalculator
 
 	CAPIBARA_TAX_BASE_GREATER_THAN_30 = 0.012
