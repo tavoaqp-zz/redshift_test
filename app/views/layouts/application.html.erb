@@ -20,8 +20,8 @@
     <div class="container">
       <a class="brand" href="/">Agendamento de transferencias</a>
       <ul class="nav">
-        <li class="active"><%= link_to t('.transfer_index'), transfer_index_path %></li>
-        <li class="active"><%= link_to t('.accounts_index'), account_index_path %></li>
+        <li ><%= link_to t('.accounts_index'), account_index_path %></li>
+        <li ><%= link_to t('.transfer_index'), transfer_index_path %></li>        
         <% if !current_user.nil? %>
         <li ><%= link_to t('.log_out'), destroy_user_session_path, :method => :delete %></li>
         <% end %>
