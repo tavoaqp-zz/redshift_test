@@ -5,7 +5,7 @@ class TransferController < ApplicationController
   before_filter :authenticate_user! 
 
   def index
-  	@transfers=current_user.transfers.reload
+  	@transfers=current_user.transfers
   end
 
   def show
@@ -22,27 +22,22 @@ class TransferController < ApplicationController
   def create 
     
     if (params[:transfer])
-      params.require(:transfer)            
-      @transfer=Transfer.new(params[:transfer].permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date))
+      transfer_params(params)      
     elsif (params[:abacaxi_transfer])
-      params.require(:abacaxi_transfer)
-      @transfer=Transfer.new(params[:abacaxi_transfer].permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date))
+      abacaxi_transfer_params(params)      
     elsif (params[:bessouro_transfer])
-      params.require(:bessouro_transfer)
-      @transfer=Transfer.new(params[:bessouro_transfer].permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date))
+      bessouro_transfer_params(params)
     elsif (params[:capibara_transfer])
-      params.require(:capibara_transfer)
-      @transfer=Transfer.new(params[:capibara_transfer].permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date))
+      capibara_transfer_params(params)
     elsif (params[:damasco_transfer])
-      params.require(:damasco_transfer)
-      @transfer=Transfer.new(params[:damasco_transfer].permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date))
+      damasco_transfer_params(params)
     end    
 
     @transfer.user=current_user
 
     respond_to do |format|
       if (@transfer.save)
-        format.html { render action: 'index', notice: t('transfer.successfully_created') }
+        format.html { redirect_to action: :index, notice: t('transfer.successfully_created') }
       else
         format.html { render action: 'new' }
       end
@@ -54,5 +49,33 @@ class TransferController < ApplicationController
     @transfer=Transfer.find_by_id(params.require(:id))
     @transfer.delete
   end
+
+  private
+
+  def transfer_params(params)
+    params.require(:transfer)
+    @transfer=Transfer.new(params[:transfer].permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date))
+  end
+
+  def abacaxi_transfer_params(params)
+    params.require(:abacaxi_transfer)
+    @transfer=Transfer.new(params[:abacaxi_transfer].permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date))
+  end
+
+  def bessouro_transfer_params(params)
+    params.require(:bessouro_transfer)
+    @transfer=Transfer.new(params[:bessouro_transfer].permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date))
+  end
+
+  def capibara_transfer_params(params)
+    params.require(:capibara_transfer)
+    @transfer=Transfer.new(params[:capibara_transfer].permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date))
+  end
+
+  def damasco_transfer_params(params)
+    params.require(:damasco_transfer)
+    @transfer=Transfer.new(params[:damasco_transfer].permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date))
+  end
+
 
 end

@@ -40,7 +40,42 @@ describe TransferController do
 			post :create, :transfer => transfer_attributes
 			user.transfers.reload
 			user.transfers.should include(assigns(:transfer))
-			#assigns(:transfer).should == user.transfers.first
+		end
+
+		it "should create a new capibara transfer object" do
+			sign_in user
+			transfer_attributes=FactoryGirl.attributes_for(:capibara_transfer, :src_account_id => account1.code, :dst_account_id => account2.code, :amount => 100, :scheduled_date => Date.today+20.days)			
+
+			post :create, :capibara_transfer => transfer_attributes
+			user.transfers.reload
+			user.transfers.should include(assigns(:transfer))
+		end
+
+		it "should create a new bessouro transfer object" do
+			sign_in user
+			transfer_attributes=FactoryGirl.attributes_for(:capibara_transfer, :src_account_id => account1.code, :dst_account_id => account2.code, :amount => 100, :scheduled_date => Date.today+20.days)			
+
+			post :create, :bessouro_transfer => transfer_attributes
+			user.transfers.reload
+			user.transfers.should include(assigns(:transfer))
+		end
+
+		it "should create a new abacaxi transfer object" do
+			sign_in user
+			transfer_attributes=FactoryGirl.attributes_for(:capibara_transfer, :src_account_id => account1.code, :dst_account_id => account2.code, :amount => 100, :scheduled_date => Date.today+20.days)			
+
+			post :create, :abacaxi_transfer => transfer_attributes
+			user.transfers.reload
+			user.transfers.should include(assigns(:transfer))
+		end
+
+		it "should create a new damasco transfer object" do
+			sign_in user
+			transfer_attributes=FactoryGirl.attributes_for(:capibara_transfer, :src_account_id => account1.code, :dst_account_id => account2.code, :amount => 100, :scheduled_date => Date.today+20.days)			
+
+			post :create, :damasco_transfer => transfer_attributes
+			user.transfers.reload
+			user.transfers.should include(assigns(:transfer))
 		end
 	end
 

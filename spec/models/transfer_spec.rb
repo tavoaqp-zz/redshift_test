@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'spec_helper'
 require 'devise/test_helpers'
 
@@ -16,6 +17,24 @@ describe Transfer do
 
 	    it { should validate_presence_of(:src_account_id) }
 	    it { should validate_presence_of(:dst_account_id) }
+
+	    it "validates date range" do
+	    	subject.scheduled_date=Date.today-10.days
+	    	subject.date_range.should include(" precisa ser maior ou igual ao dia atual")
+	    end
+
+	    it "validates different accounts" do
+	    	subject.source_account=account1
+	    	subject.destination_account=account1
+	    	subject.different_accounts.should include(" e Conta de origem precisam ser diferentes")
+	    end
+
+	    it "validates existing accounts" do
+	    	subject.src_account_id="24453-6"
+	    	subject.dst_account_id="24453-8"
+	    	subject.accounts_exist.should include(" não existe")
+	    end
+
 
   	end
 end

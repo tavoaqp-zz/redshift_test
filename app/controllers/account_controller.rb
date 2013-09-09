@@ -21,7 +21,7 @@ class AccountController < ApplicationController
 		@account.user=current_user
     	respond_to do |format|
 			if (@account.save)
-				format.html { render action: 'index', notice: t('account.successfully_created') }
+				format.html { redirect_to action: :index, notice: t('account.successfully_created') }
 			else
 				format.html { render action: 'new' }
 			end

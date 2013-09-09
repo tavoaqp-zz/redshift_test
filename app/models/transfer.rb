@@ -1,3 +1,4 @@
+# encoding: utf-8
 ##
 # Classe abstrata que representa uma transferência. O relacionamento com as contas é através do codigo delas.
 # Ela define também o método polimorfico calculate_tax que é implementado nas classes filhas que por sua vez
@@ -17,6 +18,8 @@ class Transfer < ActiveRecord::Base
 
 	validates_numericality_of :amount, :greater_than => 0
 	validate :date_range
+	validate :different_accounts
+	validate :accounts_exist
 
 	after_create :calculate_tax
 
@@ -26,7 +29,7 @@ class Transfer < ActiveRecord::Base
 
 	def date_range
 		if ( days_to_schedule < 0 )
-			errors.add(:scheduled_date, "A data de agendamento precisa ser maior ou igual ao dia atual")
+			errors.add(:scheduled_date, " precisa ser maior ou igual ao dia atual")
 		end
 	end
 
@@ -35,6 +38,23 @@ class Transfer < ActiveRecord::Base
 			(scheduled_date - Date.today).to_i
 		else
 			-1
+		end
+	end
+
+	def different_accounts
+		if (!src_account_id.blank? && !dst_account_id.blank? && src_account_id==dst_account_id)
+			errors.add(:src_account_id, " e Conta de origem precisam ser diferentes")
+		end
+	end
+
+	def accounts_exist
+		if (!src_account_id.blank? && !dst_account_id.blank?)
+			if (Account.find_by_code(src_account_id).nil?)
+				errors.add(:src_account_id, " não existe")
+			end
+			if (Account.find_by_code(dst_account_id).nil?)
+				errors.add(:dst_account_id, " não existe")
+			end
 		end
 	end
 
