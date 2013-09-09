@@ -22,7 +22,7 @@ describe MainController do
     		get 'index'
     		assigns(:accounts).should == user.accounts
       		response.should be_success
-      		response.should render_template("account/index")
+      		response.should render_template("main/index")
     	end
 	end
 

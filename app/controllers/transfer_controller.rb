@@ -2,7 +2,7 @@ class TransferController < ApplicationController
   before_filter :authenticate_user! 
 
   def index
-  	@transfers=current_user.transfers
+  	@transfers=current_user.transfers.reload
   end
 
   def show
