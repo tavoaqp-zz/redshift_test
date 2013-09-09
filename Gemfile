@@ -42,6 +42,7 @@ group :test do
 	gem "factory_girl_rails"
 	gem 'rspec-rails'
   	gem 'shoulda-matchers'
+  	gem 'simplecov'
 end
 
 # Use ActiveModel has_secure_password

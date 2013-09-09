@@ -6,10 +6,10 @@ describe MainController do
 
 	describe "GET index " do
 
-		before do			
-			user.accounts<<FactoryGirl.build(:account, :code => "12345-1")
-			user.accounts<<FactoryGirl.build(:account, :code => "12346-1")			
-		end
+  		before do			
+  			user.accounts<<FactoryGirl.build(:account, :code => "12345-1")
+  			user.accounts<<FactoryGirl.build(:account, :code => "12346-1")			
+  		end
 
     	it "should show normal index template when user is not logged in " do
     		get 'index'

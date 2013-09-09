@@ -6,16 +6,20 @@ class TransferController < ApplicationController
   end
 
   def show
-    @transfer=Transfer.find_by_id(params[:id])
+    @transfer=Transfer.find_by_id(params.require(:id))
   end
 
   def create
-    @transfer=Transfer.create(params[:transfer].merge({user: current_user}))
-    if (!@transfer.save)
+    @transfer=Transfer.new(params.require(:transfer).permit(:src_account_id, :dst_account_id, :amount, :type, :scheduled_date) )
+    @transfer.user=current_user
+
+    if (!@transfer.save)      
       notice=@transfer.errors
     end
   end
 
   def delete
+    @transfer=Transfer.find_by_id(params.require(:id))
+    @transfer.delete
   end
 end

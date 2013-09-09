@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe TransferController do
+describe AccountController do
 	before(:all) do
 		Account.delete_all
 		Transfer.delete_all
@@ -23,43 +23,42 @@ describe TransferController do
       		response.should_not be_success
     	end
 
-    	it "should show transfers page when user is logged in" do
+    	it "should show accounts page when user is logged in" do
     		sign_in user
     		get 'index'
-    		assigns(:transfers).should == user.transfers
+    		assigns(:accounts).should == user.accounts
       		response.should be_success
-      		response.should render_template("transfer/index")
+      		response.should render_template("account/index")
     	end
 	end
 
 	describe "POST create" do
-		it "should create a new transfer object" do
+		it "should create a new account object" do
 			sign_in user
-			transfer_attributes=FactoryGirl.attributes_for(:capibara_transfer, :src_account_id => account1.id, :dst_account_id => account2.id, :amount => 100, :scheduled_date => Date.today+20.days)			
+			account_attributes=FactoryGirl.attributes_for(:account, :total => 100, :code => "12347-5")			
 
-			post :create, :transfer => transfer_attributes
-			user.transfers.reload
-			user.transfers.should include(assigns(:transfer))
-			#assigns(:transfer).should == user.transfers.first
+			post :create, :account => account_attributes
+			user.accounts.reload
+			user.accounts.should include(assigns(:account))
 		end
 	end
 
 	describe "GET show" do
 		it "should render show template" do
 			sign_in user
-			user.transfers.reload
-			get :show, :id => user.transfers.first.id
-			assigns(:transfer).should == user.transfers.first
+			user.accounts.reload
+			get :show, :id => user.accounts.first.id
+			assigns(:account).should == user.accounts.first
 		end
 	end
 
 	describe "DELETE delete" do
 		it "should delete a transfer" do
 			sign_in user
-			user.transfers.reload
-			delete :delete, :id => user.transfers.first.id
-			user.transfers.reload
-			user.transfers.should_not include(assigns(:transfer))
+			user.accounts.reload
+			delete :delete, :id => user.accounts.first.id
+			user.accounts.reload
+			user.accounts.should_not include(assigns(:account))
 		end
 	end
 

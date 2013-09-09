@@ -7,7 +7,7 @@ class Transfer < ActiveRecord::Base
 	validates_presence_of :dst_account_id
 	validates_presence_of :amount
 	validates_presence_of :scheduled_date
-	
+
 	validates_numericality_of :amount, :greater_than => 0
 	validate :date_range
 
@@ -24,7 +24,7 @@ class Transfer < ActiveRecord::Base
 	end
 
 	def days_to_schedule
-		(scheduled_date - created_at.to_date).to_i
+		(scheduled_date - Date.today).to_i
 	end
 
 end
