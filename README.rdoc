@@ -1,28 +1,17 @@
-== README
+Para rodar precisa instalar Rails 4 na máquina.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Logo rodar os seguintes comandos na pasta do projeto:
 
-Things you may want to cover:
+bundle install
+bundle exec rake db:migrate
+rails s
 
-* Ruby version
+O teste de cobertura está em 99.21% e os resultados se encontram na pasta coverage.
+Para rodar os testes precisa fazer o seguinte:
 
-* System dependencies
+bundle exec rspec
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+O sistema é bem simples com um cadastro de usuários via Devise. A persistência é feita via SQLite.
+As classes de transferência e conta são associadas aos usuários e para cada tipo de transferência é calculada
+a taxa de acordo com as especificações.
+Basicamente, para cada tipo de transferência existe uma classe e cada uma chama um algoritmo específico para calcular a taxa.
