@@ -3,7 +3,9 @@ Para rodar precisa instalar Rails 4 na máquina.
 Logo rodar os seguintes comandos na pasta do projeto:
 
 bundle install
+
 bundle exec rake db:migrate
+
 rails s
 
 O teste de cobertura está em 99.21% e os resultados se encontram na pasta coverage.
