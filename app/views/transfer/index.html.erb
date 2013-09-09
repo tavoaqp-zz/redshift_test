@@ -7,6 +7,7 @@
       <th><%= t 'activerecord.attributes.transfer.amount' %></th>
       <th><%= t 'activerecord.attributes.transfer.tax' %></th>
       <th><%= t 'activerecord.attributes.transfer.scheduled_date' %></th>
+      <th><%= t 'activerecord.attributes.transfer.type' %></th>
     </tr>
 
   <% @transfers.each do |transfer| %>
@@ -16,6 +17,7 @@
       <td><%= transfer.amount %></td>
       <td><%= transfer.tax %></td>
       <td><%= transfer.scheduled_date %></td>
+      <td><%= transfer.type[0] %></td>
     </tr>
   <% end %>
   </table>

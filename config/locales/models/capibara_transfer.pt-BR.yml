@@ -1,22 +1,28 @@
 pt-BR:
   activerecord:
     models:
-      transfer:
+      capibara_transfer:
         one: 'Transferencia'
         other: 'Transferencias'
     attributes:
-      transfer:
+      capibara_transfer:
         src_account_id: "Conta de origem"
         dst_account_id: "Conta de destino"
         amount: "Valor da transferencia"
         tax: "Taxa"
         scheduled_date: "Data de agendamento"
-        type: "Tipo"
     errors:
       models:
-        transfer:
+        capibara_transfer:
           attributes:
             amount:
               blank: "O valor não pode ficar em branco"
+              not_a_number: "O valor da transferencia precisa ser um número"
+            src_account_id:
+              blank: "A conta de origem não pode ficar vazia"
+            dst_account_id:
+              blank: "A conta de destino não pode ficar vazia"
+            scheduled_date:
+              blank: "A data de agendamento não pode ficar vazia"
   errors:
     messages:
