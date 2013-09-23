@@ -41,6 +41,9 @@ gem 'jbuilder', '~> 1.2'
 #User authentication
 gem 'devise'
 
+gem 'therubyracer'
+gem 'execjs'
+
 #group :development do 
 	gem 'capistrano', group: :development
 	gem 'rvm-capistrano', group: :development

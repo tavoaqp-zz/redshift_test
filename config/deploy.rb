@@ -5,9 +5,9 @@ require 'capistrano/ext/multistage'
 require 'capistrano/confirm'
 require "rvm/capistrano"                               # Load RVM's capistrano plugin.
 
-set :rvm_type, :system
-set :rvm_ruby_string, 'ruby-1.9.3-p194@redshift'   # Or whatever env you want it to run in.
-set :rvm_bin_path, '/usr/local/rvm/bin'
+set :rvm_type, :user
+set :rvm_ruby_string, 'ruby-2.0.0-p247@redshift'   # Or whatever env you want it to run in.
+set :rvm_bin_path, '/home/ubuntu/.rvm/bin'
 
 default_run_options[:pty] = true   # Must be set for the password prompt from git to work
 ssh_options[:forward_agent] = true # Use local keys instead of the ones on the server
@@ -26,5 +26,6 @@ after "deploy", "deploy:cleanup"
 
 set :user, 'ubuntu'
 set :use_sudo, false
+set :rvm_install_with_sudo, false
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :confirm_stages, "staging"
