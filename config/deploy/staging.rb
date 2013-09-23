@@ -17,7 +17,7 @@ role :db,  'ec2-54-221-63-127.compute-1.amazonaws.com', :primary => true # This 
 role :central, 'ec2-54-221-63-127.compute-1.amazonaws.com'
 
 #before 'deploy:update_code', 'deploy:suspend_monitoring'
-# after 'deploy:update_code', 'deploy:update_shared_symlinks'
+after 'deploy:update_code', 'deploy:update_shared_symlinks'
 # after 'deploy:restart', 'foreman:export' # Update all the ec2 instances
 # after 'foreman:export', 'foreman:restart' # Update all the ec2 instances
 #after 'foreman:restart','deploy:activate_monitoring'
@@ -38,7 +38,7 @@ namespace :deploy do
   end
 
   task :update_shared_symlinks do
-    %w(config/evaluations_database.yml config/database.yml config/s3.yml config/s3tmp.yml config/site_counts_emr.yml config/tracking_dynamodb.yml config/google_api_client.yml config/related_contents_emr.yml config/zencoder.yml).each do |path|
+    %w(config/database.yml).each do |path|
       run "ln -s #{File.join(deploy_to, "shared", path)} #{File.join(release_path, path)}"
     end
   end
