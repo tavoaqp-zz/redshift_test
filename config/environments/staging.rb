@@ -37,7 +37,7 @@ ChallengeElo::Application.configure do
   config.log_tags = [ :remote_ip ]
 
   # Use a different logger for distributed setups
-  config.logger = ActiveSupport::TaggedLogging.new(ActiveSupport::BufferedLogger.new("#{Rails.root}/log/#{Rails.env}.log"))
+  #config.logger = ActiveSupport::TaggedLogging.new(ActiveSupport::BufferedLogger.new("#{Rails.root}/log/#{Rails.env}.log"))
 
   # Use a different cache store in production
   #config.cache_store = :dalli_store, "clipes-bandas-cache.870ayi.0001.use1.cache.amazonaws.com", { :namespace => "media-choice-staging", :expires_in => 1.hour, :compress => true }
