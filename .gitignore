@@ -22,3 +22,4 @@ doc/src/*.toc
 spec/reports
 .pydevproject
 *swp
+config/database.yml
