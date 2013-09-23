@@ -14,7 +14,8 @@ gem 'cancan'
 gem 'paper_trail', '>= 3.0.0.beta1'
 #gem 'safe_attributes'
 
-gem 'activerecord-postgresql-adapter'
+#gem 'activerecord-postgresql-adapter'
+gem 'activerecord-jdbcpostgresql-adapter'
 #gem 'jruby-openssl'
 
 # Use SCSS for stylesheets
