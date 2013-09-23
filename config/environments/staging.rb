@@ -78,9 +78,9 @@ ChallengeElo::Application.configure do
   # Activate observers for the staging environment
   #config.active_record.observers = :video_observer, :encoded_video_observer, :audio_observer, :encoded_audio_observer, :photo_observer, :wording_observer, :hd_content_observer, :mass_email_batch_observer, :mass_email_observer
 
-  config.middleware.use ExceptionNotifier,
-    :email_prefix => "[ERROR] ",
-    :sender_address => %{admin@geografiademercado.com.br},
-    :exception_recipients => %w{tavoaqp@gmail.com}
+  # config.middleware.use ExceptionNotifier,
+  #   :email_prefix => "[ERROR] ",
+  #   :sender_address => %{admin@geografiademercado.com.br},
+  #   :exception_recipients => %w{tavoaqp@gmail.com}
 
 end
