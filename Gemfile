@@ -41,7 +41,14 @@ gem 'jbuilder', '~> 1.2'
 #User authentication
 gem 'devise'
 
-gem 'capistrano'
+#group :development do 
+	gem 'capistrano', group: :development
+	gem 'rvm-capistrano', group: :development
+	gem 'capistrano-ext', group: :development
+	gem 'capistrano-confirm', group: :development
+#enb
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

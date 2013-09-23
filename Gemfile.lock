@@ -45,6 +45,9 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
+    capistrano-confirm (0.0.6)
+    capistrano-ext (1.2.1)
+      capistrano (>= 1.0.0)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -164,6 +167,8 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
+    rvm-capistrano (1.5.0)
+      capistrano (>= 2.15.4)
     safe_yaml (0.9.7)
     sass (3.2.10)
     sass-rails (4.0.0)
@@ -214,6 +219,8 @@ DEPENDENCIES
   activerecord-jdbcsqlite3-adapter
   cancan
   capistrano
+  capistrano-confirm
+  capistrano-ext
   coffee-rails (~> 4.0.0)
   devise
   factory_girl
@@ -226,6 +233,7 @@ DEPENDENCIES
   rails_admin
   rspec
   rspec-rails
+  rvm-capistrano
   sass-rails (~> 4.0.0)
   sdoc
   shoulda-matchers
