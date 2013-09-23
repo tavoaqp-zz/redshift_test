@@ -14,7 +14,7 @@ gem 'cancan'
 gem 'paper_trail', '>= 3.0.0.beta1'
 #gem 'safe_attributes'
 gem 'activerecord-jdbcsqlite3-adapter'
-
+gem 'activerecord-postgresql-adapter'
 #gem 'jruby-openssl'
 
 # Use SCSS for stylesheets
@@ -42,7 +42,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise'
 
 gem 'therubyracer'
-gem 'execjs'
+gem 'execjs'	
 
 #group :development do 
 	gem 'capistrano', group: :development
