@@ -4,7 +4,18 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'jdbc-sqlite3'
+
+gem 'rails_admin'
+
+gem 'cancan'
+
+#gem 'paper_trail'
+gem 'paper_trail', '>= 3.0.0.beta1'
+#gem 'safe_attributes'
+gem 'activerecord-jdbcsqlite3-adapter'
+
+#gem 'jruby-openssl'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

@@ -1,4 +1,5 @@
 ChallengeElo::Application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   get "account/index"
   get "account/show"
   post "account/create"
